@@ -11,11 +11,15 @@ Why? Because we can.
 -Vibe
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/319"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/319.png" alt="Chaos Bobina" width="150" /></a>
-  <a href="https://bobina.moe/bobinas/318"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/318.png" alt="Black Hole Bobina" width="150" /></a>
-  <a href="https://bobina.moe/bobinas/317"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/317.png" alt="Jacko-o-bobina" width="150" /></a>
-  <a href="https://bobina.moe/bobinas/316"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/316.png" alt="Grotto Bobina" width="150" /></a>
-  <a href="https://bobina.moe/bobinas/315"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/315.png" alt="Mumina &amp; Bobina" width="150" /></a>
+  <a href="https://bobina.moe/bobinas/319"><img src="assets/bobinas/319-chaos-bobina.webp" alt="Chaos Bobina" width="150" /></a>
+  <a href="https://bobina.moe/bobinas/318"><img src="assets/bobinas/318-black-hole-bobina.webp" alt="Black Hole Bobina" width="150" /></a>
+  <a href="https://bobina.moe/bobinas/317"><img src="assets/bobinas/317-jacko-o-bobina.webp" alt="Jacko-o-bobina" width="150" /></a>
+  <a href="https://bobina.moe/bobinas/316"><img src="assets/bobinas/316-grotto-bobina.webp" alt="Grotto Bobina" width="150" /></a>
+  <a href="https://bobina.moe/bobinas/315"><img src="assets/bobinas/315-mumina-and-bobina.webp" alt="Mumina &amp; Bobina" width="150" /></a>
+  <a href="https://bobina.moe/bobinas/323"><img src="assets/bobinas/323-carbonite-bobina.webp" alt="Carbonite Bobina" width="150" /></a>
+  <a href="https://bobina.moe/bobinas/322"><img src="assets/bobinas/322-grok-bot-bobina.webp" alt="Grok Bot Bobina" width="150" /></a>
+  <a href="https://bobina.moe/bobinas/321"><img src="assets/bobinas/321-nyotaimori-bobina.webp" alt="Nyotaimori Bobina" width="150" /></a>
+  <a href="https://bobina.moe/bobinas/320"><img src="assets/bobinas/320-calling-bobina.webp" alt="Calling Bobina" width="150" /></a>
 </p>
 
 Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs](https://bobina.moe/docs) · Gallery: [bobina.moe/bobinas](https://bobina.moe/bobinas)
@@ -27,8 +31,8 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 ### Getting Started
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/319"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/319.png" alt="Chaos Bobina" width="110" /></a>
-  <a href="https://bobina.moe/bobinas/318"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/318.png" alt="Black Hole Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/319"><img src="assets/bobinas/319-chaos-bobina.webp" alt="Chaos Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/318"><img src="assets/bobinas/318-black-hole-bobina.webp" alt="Black Hole Bobina" width="110" /></a>
 </p>
 
 - [Introduction](./docs/getting-started/introduction.md)
@@ -37,8 +41,8 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 ### Platform
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/317"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/317.png" alt="Jacko-o-bobina" width="110" /></a>
-  <a href="https://bobina.moe/bobinas/316"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/316.png" alt="Grotto Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/317"><img src="assets/bobinas/317-jacko-o-bobina.webp" alt="Jacko-o-bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/316"><img src="assets/bobinas/316-grotto-bobina.webp" alt="Grotto Bobina" width="110" /></a>
 </p>
 
 - [Core Features](./docs/platform/core-features.md)
@@ -49,8 +53,8 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 ### Community
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/315"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/315.png" alt="Mumina &amp; Bobina" width="110" /></a>
-  <a href="https://bobina.moe/bobinas/314"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/314.png" alt="Honeypot Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/315"><img src="assets/bobinas/315-mumina-and-bobina.webp" alt="Mumina &amp; Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/314"><img src="assets/bobinas/314-honeypot-bobina.webp" alt="Honeypot Bobina" width="110" /></a>
 </p>
 
 - [Council Governance](./docs/community/council-governance.md)
@@ -61,8 +65,8 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 ### AI & Creative
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/313"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/313.png" alt="Bamboo Bobina" width="110" /></a>
-  <a href="https://bobina.moe/bobinas/312"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/312.png" alt="Father’s Day Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/313"><img src="assets/bobinas/313-bamboo-bobina.webp" alt="Bamboo Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/312"><img src="assets/bobinas/312-fathers-day-bobina.webp" alt="Father’s Day Bobina" width="110" /></a>
 </p>
 
 - [AI Companion](./docs/ai-creative/ai-companion.md)
@@ -73,8 +77,8 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 ### Economy & polish
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/311"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/311.png" alt="Lily &amp; Bobina" width="110" /></a>
-  <a href="https://bobina.moe/bobinas/310"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/310.jpeg" alt="Neko Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/311"><img src="assets/bobinas/311-lily-and-bobina.webp" alt="Lily &amp; Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/310"><img src="assets/bobinas/310-neko-bobina.webp" alt="Neko Bobina" width="110" /></a>
 </p>
 
 - [Token Purchase](./docs/economy/token-purchase.md)
@@ -85,8 +89,8 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 ### Reference
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/309"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/309.png?v=1786004681480" alt="Cheeky Bobina" width="110" /></a>
-  <a href="https://bobina.moe/bobinas/308"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/308.png" alt="Tipping Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/309"><img src="assets/bobinas/309-cheeky-bobina.webp" alt="Cheeky Bobina" width="110" /></a>
+  <a href="https://bobina.moe/bobinas/308"><img src="assets/bobinas/308-tipping-bobina.webp" alt="Tipping Bobina" width="110" /></a>
 </p>
 
 - [Privacy & Data](./docs/reference/privacy-and-data.md)
@@ -100,14 +104,14 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 Sampled from the [gallery](https://bobina.moe/bobinas):
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/319"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/319.png" alt="Chaos Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/318"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/318.png" alt="Black Hole Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/317"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/317.png" alt="Jacko-o-bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/316"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/316.png" alt="Grotto Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/315"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/315.png" alt="Mumina &amp; Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/314"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/314.png" alt="Honeypot Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/313"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/313.png" alt="Bamboo Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/312"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/312.png" alt="Father’s Day Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/319"><img src="assets/bobinas/319-chaos-bobina.webp" alt="Chaos Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/318"><img src="assets/bobinas/318-black-hole-bobina.webp" alt="Black Hole Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/317"><img src="assets/bobinas/317-jacko-o-bobina.webp" alt="Jacko-o-bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/316"><img src="assets/bobinas/316-grotto-bobina.webp" alt="Grotto Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/315"><img src="assets/bobinas/315-mumina-and-bobina.webp" alt="Mumina &amp; Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/314"><img src="assets/bobinas/314-honeypot-bobina.webp" alt="Honeypot Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/313"><img src="assets/bobinas/313-bamboo-bobina.webp" alt="Bamboo Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/312"><img src="assets/bobinas/312-fathers-day-bobina.webp" alt="Father’s Day Bobina" width="120" /></a>
 </p>
 
 ---

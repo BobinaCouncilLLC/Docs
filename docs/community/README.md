@@ -1,9 +1,10 @@
 # Community
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/315"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/315.png" alt="Mumina &amp; Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/314"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/314.png" alt="Honeypot Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/313"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/313.png" alt="Bamboo Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/315"><img src="../../assets/bobinas/315-mumina-and-bobina.webp" alt="Mumina &amp; Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/314"><img src="../../assets/bobinas/314-honeypot-bobina.webp" alt="Honeypot Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/313"><img src="../../assets/bobinas/313-bamboo-bobina.webp" alt="Bamboo Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/281"><img src="../../assets/bobinas/281-botanical-bobina.webp" alt="Botanical Bobina" width="120" /></a>
 </p>
 
 Part of the [Bobina Council Docs](../../README.md).

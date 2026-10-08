@@ -1,8 +1,9 @@
 # Bobina Hashing & Proof of Bobina
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/287"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/287.png" alt="Hunter Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/286"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/286.png" alt="Crackhead Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/287"><img src="../../assets/bobinas/287-hunter-bobina.webp" alt="Hunter Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/286"><img src="../../assets/bobinas/286-crackhead-bobina.webp" alt="Crackhead Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/272"><img src="../../assets/bobinas/272-peephole-bobina.webp" alt="Peephole Bobina" width="130" /></a>
 </p>
 
 How we create a unique, verifiable fingerprint for every Bobina.
@@ -25,7 +26,7 @@ This system ensures that every contribution is verifiably unique and its origin 
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/286"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/286.png" alt="Crackhead Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/286"><img src="../../assets/bobinas/286-crackhead-bobina.webp" alt="Crackhead Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>

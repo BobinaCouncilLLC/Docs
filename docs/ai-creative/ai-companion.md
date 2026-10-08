@@ -1,8 +1,8 @@
 # AI Companion
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/319"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/319.png" alt="Chaos Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/318"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/318.png" alt="Black Hole Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/319"><img src="../../assets/bobinas/319-chaos-bobina.webp" alt="Chaos Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/318"><img src="../../assets/bobinas/318-black-hole-bobina.webp" alt="Black Hole Bobina" width="130" /></a>
 </p>
 
 Interact with Bobina across Web, Discord, and Telegram. Your companion account syncs credits, memories, relationship score, and more.
@@ -26,7 +26,7 @@ Generate a price chart for any cryptocurrency.
 
 Examples: `/chart ETH 7d` `cv BOBINA 24h`
 
-![Chart command example](https://bobina.moe/images/docs/chart.png)
+![Chart command example](../../assets/docs/chart.webp)
 
 /op
 
@@ -36,7 +36,7 @@ Get Bobina's market opinion with technical analysis (RSI, MACD, Support/Resistan
 
 Examples: `/op ETH 24h` `/op SOL 7d`
 
-![Opinion command example](https://bobina.moe/images/docs/op.png)
+![Opinion command example](../../assets/docs/opinion-command.webp)
 
 /index
 
@@ -46,7 +46,7 @@ View top 10 cryptocurrencies with market-wide metrics.
 
 Shows: Top 10 by market cap, 24h changes, total market cap, BTC dominance, Fear & Greed Index
 
-![Index command example](https://bobina.moe/images/docs/index-command.png)
+![Index command example](../../assets/docs/index-command.webp)
 
 /heatmap
 
@@ -54,7 +54,7 @@ Generate a visual heatmap of the top 50 cryptocurrencies by market cap.
 
 `/heatmap`
 
-![Heatmap command example](https://bobina.moe/images/docs/heatmap.png)
+![Heatmap command example](../../assets/docs/heatmap.webp)
 
 /leaderboard
 
@@ -68,7 +68,7 @@ The site path [bobina.moe/leaderboard](https://bobina.moe/leaderboard) opens the
 
 Bobina's AI treats **$BOBINA** exactly like any other token.
 
-![Token leaderboard example](https://bobina.moe/images/docs/leaderboard.png)
+![Token leaderboard example](../../assets/docs/leaderboard.webp)
 
 ### Token Calling System
 
@@ -97,7 +97,7 @@ Examples:
 
 Context-aware responses based on your history, dynamic, and custom instructions.
 
-![Talk command example](https://bobina.moe/images/docs/talk.png)
+![Talk command example](../../assets/docs/talk.webp)
 
 /help
 
@@ -105,7 +105,7 @@ View all available commands, varies by platform.
 
 `/help`
 
-![Help command example](https://bobina.moe/images/docs/help.png)
+![Help command example](../../assets/docs/help.webp)
 
 /bobina
 
@@ -118,7 +118,7 @@ Examples:
 - `/bobina smug, red shirt, looking at viewer`
 - `/bobina drinking coffee, hoodie, cafe background`
 
-![Bobina art generation example](https://bobina.moe/images/docs/bobina.png)
+![Bobina art generation example](../../assets/docs/bobina-art.webp)
 
 ### Platform Access
 
@@ -134,7 +134,7 @@ Discord
 
 /talk or /mention, slash commands, thread replies, servers only
 
-[![Discord](https://bobina.moe/images/design-mode/Discord_Logo_White_PMS%281%29%281%29%281%29%281%29(1).png) Join Discord](https://discord.gg/XnnA2hvFFh)
+[![Discord](../../assets/docs/discord-logo.webp) Join Discord](https://discord.gg/XnnA2hvFFh)
 
 [Join Telegram](https://t.me/BobinaCouncil)
 
@@ -154,7 +154,7 @@ Set a reminder using explicit time intervals.
 | Xw | X weeks | /remindme 1w Review portfolio |
 | XM | X months | /remindme 1M Quarterly review |
 
-![Reminder command example](https://bobina.moe/images/docs/remindme.png)
+![Reminder command example](../../assets/docs/remindme.webp)
 
 Natural Language Reminders
 
@@ -193,7 +193,7 @@ View your Relationship Score with Bobina and current dynamic.
 
 Shows: Relationship Score (0-100), current dynamic, total memories, feedback stats
 
-![Score command example](https://bobina.moe/images/docs/score.png)
+![Score command example](../../assets/docs/score.webp)
 
 /daily | /weekly | /monthly
 
@@ -201,7 +201,7 @@ View Bobina's generated temporal personality profiles based on your conversation
 
 Includes: Personality insights, conversation themes, mood analysis, behavioral patterns
 
-![Daily profile command example](https://bobina.moe/images/docs/daily.png)
+![Daily profile command example](../../assets/docs/daily.webp)
 
 /credits
 
@@ -209,7 +209,7 @@ View your credit balance, tier status, and usage information.
 
 Shows: Current balance, daily free credits remaining, tier benefits
 
-![Credits command example](https://bobina.moe/images/docs/credits.png)
+![Credits command example](../../assets/docs/credits.webp)
 
 ### Credits System
 
@@ -412,7 +412,7 @@ Access the [Bobina Terminal](#terminal) to see all your memories together with B
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/318"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/318.png" alt="Black Hole Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/318"><img src="../../assets/bobinas/318-black-hole-bobina.webp" alt="Black Hole Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>

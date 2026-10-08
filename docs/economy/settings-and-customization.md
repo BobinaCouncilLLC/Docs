@@ -1,8 +1,8 @@
 # Settings & Customization
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/299"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/299.png" alt="Kitsune Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/298"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/298.jpg" alt="Sniper Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/299"><img src="../../assets/bobinas/299-kitsune-bobina.webp" alt="Kitsune Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/298"><img src="../../assets/bobinas/298-sniper-bobina.webp" alt="Sniper Bobina" width="130" /></a>
 </p>
 
 Personalize your Bobina experience through [Terminal Settings](https://bobina.moe/?terminal=settings).
@@ -54,7 +54,7 @@ Tone guidance is also provided by the API for each option (used by the companion
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/298"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/298.jpg" alt="Sniper Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/298"><img src="../../assets/bobinas/298-sniper-bobina.webp" alt="Sniper Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>

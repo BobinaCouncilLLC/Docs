@@ -1,8 +1,9 @@
 # Council ID (Bobina ID)
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/295"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/295.jpeg" alt="Snibbu &amp; Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/294"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/294.png" alt="Wine Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/295"><img src="../../assets/bobinas/295-snibbu-and-bobina.webp" alt="Snibbu &amp; Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/294"><img src="../../assets/bobinas/294-wine-bobina.webp" alt="Wine Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/276"><img src="../../assets/bobinas/276-geneticist-bobina.webp" alt="Geneticist Bobina" width="130" /></a>
 </p>
 
 Your permanent, platform-independent identity in the Bobina Council.
@@ -59,7 +60,7 @@ It is a read-only value that cannot be changed. Share it with admins if you need
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/294"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/294.png" alt="Wine Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/294"><img src="../../assets/bobinas/294-wine-bobina.webp" alt="Wine Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>
