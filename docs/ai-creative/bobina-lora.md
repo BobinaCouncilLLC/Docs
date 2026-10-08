@@ -7,7 +7,7 @@
 
 Create your own high-quality Bobinas using our official LoRA model on HuggingFace.
 
-For advanced AI artists, we have released our official Bobina LoRA (Low-Rank Adaptation) model on [HuggingFace](https://huggingface.co/bobinamoe/bobinas). This allows you to generate Bobinas with incredible detail and style consistency using tools like ComfyUI.
+For advanced AI artists, we have released our official Bobina LoRA (Low-Rank Adaptation) model on [HuggingFace](https://huggingface.co/BobinaCouncil). This allows you to generate Bobinas with incredible detail and style consistency using tools like ComfyUI.
 
 ### How to use in ComfyUI
 
