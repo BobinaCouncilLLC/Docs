@@ -53,7 +53,7 @@ Buy credits to keep chatting with Bobina. Credits are priced at **$0.20 per cred
 * Credits expire **1 year after purchase**
 * Credit purchases are announced in Telegram and Discord. Those announcements say: "Bobina Council LLC may use all proceeds at its sole discretion, with no commitment to buy back tokens."
 
-Non-holders get `config.dailyFreeLimit` free messages per day, currently **0** (live). The code default of 5 only applies when no credits config is stored. Bobina generation includes **1** free reroll(s).
+Non-holders get `config.dailyFreeLimit` free messages per day, currently **0** (live). There is no code default: if the free-message setting is missing or invalid, credits fail closed with `billing_unresolved` instead of falling back to a number. When you run out, Bobina says "You've hit your daily limit, honey. Grab credits to keep going, or come back tomorrow!", and the credits page shows your real free-messages-left count. Bobina generation includes **1** free reroll(s).
 
 ## Running Out
 
