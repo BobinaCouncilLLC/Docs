@@ -68,6 +68,8 @@ We deliberately expose the minimum needed for authentication and token-gating. W
 4. Exchange the returned code at `/api/oauth/token` for an ID token and access token.
 5. Call `/api/oauth/userinfo` with the access token to read consented claims (e.g. wallet + holdings for auto-verification).
 
+**Terms of Service:** the consent screen is hosted on bobina.moe and requires the user to have accepted the Terms of Service. A user who hasn't accepted yet sees the Terms dialog first. Server actions that require acceptance return `terms_required`. This includes the Bobina Companion's own OAuth consent.
+
 For token-partnership auto-verification, request the `wallet` and `holdings` scopes — the `bobina_total` claim lets you gate features by BOBINA balance across Ethereum, Base, and Ink in a single call.
 
 ## OAuth vs MCP

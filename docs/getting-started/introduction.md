@@ -21,6 +21,16 @@ The Bobina Council is a decentralized autonomous organization (DAO) that governs
 
 Once signed in, your permanent identity is a **Council ID** (also called a Bobina ID). Learn more in the [Council ID](./council-id.md) guide.
 
+## 📜 Terms of Service and the 18+ check
+
+The first time you visit, bobina.moe asks you to accept the Terms of Service and shows an 18+ age banner.
+
+* The Terms dialog always appears on top. Accept it first, then complete the 18+ banner.
+* This works the same on phones (iPhone, Android, and small screens) and inside in-app browsers like Telegram, Discord, and X. You can always reach and tap "I agree".
+* If the site can't tell whether you've already accepted the Terms, it shows the dialog again rather than skipping it.
+* Actions that need accepted Terms are refused with a `terms_required` response until you accept.
+* The OAuth consent screen on bobina.moe, used when you link the Bobina Companion, also requires accepted Terms. See [Login with Bobina.moe](../reference/login-with-bobina.md).
+
 ### Where to go next
 
 * **Official docs:** [https://bobina.moe/docs](https://bobina.moe/docs) — platform guides synced from the Council site
