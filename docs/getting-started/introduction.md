@@ -29,6 +29,9 @@ The first time you visit, bobina.moe asks you to accept the Terms of Service and
 * The Terms dialog always appears on top. Accept it first, then complete the 18+ banner.
 * This works the same on phones (iPhone, Android, and small screens) and inside in-app browsers like Telegram, Discord, and X. You can always reach and tap "I agree".
 * If the site can't tell whether you've already accepted the Terms, it shows the dialog again rather than skipping it.
+* If an ordinary page hits an error, you get a "Something went wrong" screen with a Reload button. It doesn't show the Terms dialog and doesn't count as accepting the Terms again.
+* If the Terms screen itself hits an error, the site first checks whether you've already accepted. If you have, it asks you to reload instead of asking you to accept again. If you haven't, it shows a simple agreement screen with links to the Terms of Service and Privacy Policy.
+* Pages don't crash when your browser blocks cookies or storage (for example private browsing or strict tracking protection). The site just treats your acceptance as unknown and shows the dialog.
 * Actions that need accepted Terms are refused with a `terms_required` response until you accept.
 * The OAuth consent screen on bobina.moe, used when you link the Bobina Companion, also requires accepted Terms. See [Login with Bobina.moe](../reference/login-with-bobina.md).
 
