@@ -96,6 +96,7 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 - [Privacy & Data](./docs/reference/privacy-and-data.md)
 - [Login with Bobina.moe](./docs/reference/login-with-bobina.md)
 - [MCP Capabilities](./docs/reference/mcp-capabilities.md)
+- [Bobina for Grok Bot (WIP)](./docs/reference/grok-bot.md)
 
 ---
 
