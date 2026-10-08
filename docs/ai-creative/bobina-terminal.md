@@ -25,9 +25,19 @@ View recent transmissions, achivements, role unlocks, and special messages from 
 
 Token call leaderboard showing top community predictions, call history, and market sentiment tracking via votes from human Council Members.
 
-### Community
+### Leaderboard
 
-Community leaderboard statistics and fun metrics within the Bobina Council.
+The Terminal tab is named **Leaderboard** (it used to be called Community). It shows community leaderboard statistics and fun metrics within the Bobina Council.
+
+The tab address is still [`?terminal=community`](https://bobina.moe/?terminal=community). [`?terminal=leaderboard`](https://bobina.moe/?terminal=leaderboard) opens the same tab.
+
+The homepage Leaderboard button, the Terminal's Leaderboard card, and [bobina.moe/leaderboard](https://bobina.moe/leaderboard) all open this tab. They used to open Tokens.
+
+Routing:
+
+* [bobina.moe/leaderboard?terminal=…](https://bobina.moe/leaderboard?terminal=overview) still opens whichever tab you name.
+* A `/leaderboard` link with `?token=` or `?symbol=` still opens the Tokens tab (a specific token).
+* `?terminal=leaderboard` lands on the Leaderboard tab.
 
 ### Roles & Unlocks
 
@@ -59,7 +69,7 @@ Share direct links to specific Terminal sections. Add `?terminal=` to any bobina
 | `companion` | [`?terminal=companion`](https://bobina.moe/?terminal=companion) |
 | `messages` | [`?terminal=messages`](https://bobina.moe/?terminal=messages) |
 | `tokens` | [`?terminal=tokens`](https://bobina.moe/?terminal=tokens) |
-| `community` | [`?terminal=community`](https://bobina.moe/?terminal=community) |
+| Leaderboard (`community`) | [`?terminal=community`](https://bobina.moe/?terminal=community) · [`?terminal=leaderboard`](https://bobina.moe/?terminal=leaderboard) |
 | `roles` | [`?terminal=roles`](https://bobina.moe/?terminal=roles) |
 | `records` | [`?terminal=records`](https://bobina.moe/?terminal=records) |
 | `challenges` | [`?terminal=challenges`](https://bobina.moe/?terminal=challenges) |

@@ -37,13 +37,9 @@ All merchandise is printed on-demand and ships worldwide through our fulfillment
 - Shipping: 5-10 business days (varies by location)
 - Tracking information provided once shipped
 
-### 50% Treasury
+### Proceeds
 
-Half of all merch profits (after taxes) go toward buying back $BOBINA tokens or revenue stored in the Treasury.
-
-### 50% Operations
-
-The remaining profits cover operational expenses including hosting, development, marketing, and ecosystem growth initiatives.
+Bobina Council LLC may use all proceeds at its sole discretion, with no commitment to buy back tokens. **$BOBINA** follows the same rules as every other token (Terms sections 2.7 and 2.8). There is no buyback commitment.
 
 Every purchase supports the Bobina Council ecosystem while you get awesome gear!
 

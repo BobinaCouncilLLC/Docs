@@ -50,7 +50,7 @@ Buy credits to keep chatting with Bobina. Credits are priced at **$0.20 per cred
 * Pay with **$BOBINA** tokens or **fiat via Stripe**
 * Instant credit delivery after payment confirmation
 * Credits expire **1 year after purchase**
-* Private purchases (no public notifications)
+* Credit purchases are announced in Telegram and Discord. Those announcements say: "Bobina Council LLC may use all proceeds at its sole discretion, with no commitment to buy back tokens."
 
 `dailyFreeLimit` is currently **0**. Bobina generation includes **1** free reroll(s).
 

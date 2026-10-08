@@ -58,11 +58,15 @@ Generate a visual heatmap of the top 50 cryptocurrencies by market cap.
 
 /leaderboard
 
-View the top token callers leaderboard globally.
+View the top token callers leaderboard globally. This is the chat command, not the website path.
 
 `/leaderboard`
 
 Shows: Top callers ranked by multiplier performance, entry market caps, current gains
+
+The site path [bobina.moe/leaderboard](https://bobina.moe/leaderboard) opens the Terminal **Leaderboard** tab (community stats), not the Tokens tab. See [Bobina Terminal](./bobina-terminal.md).
+
+Bobina's AI treats **$BOBINA** exactly like any other token.
 
 ![Token leaderboard example](https://bobina.moe/images/docs/leaderboard.png)
 
