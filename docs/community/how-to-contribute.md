@@ -25,6 +25,16 @@ The Contribute page allows you to choose between two types of contributions: sub
 3. Write a clear title and detailed description of your proposal.
 4. Submit for community voting.
 
+### Image prompt enhancer
+
+On the Contribute page, the image prompt enhancer tries to improve your prompt before generation. It is **free** and does **not** retry.
+
+If it cannot produce a better prompt, it shows:
+
+> Couldn't enhance this prompt right now (you weren't charged). Your prompt is unchanged.
+
+Your original prompt is left as you wrote it. A failed enhance is not treated as a successful rewrite.
+
 ### Image Requirements (Bobina Art Only)
 
 - **Aspect Ratio:** Strictly 1:1 (a perfect square). e.g., 1200x1200 pixels.
