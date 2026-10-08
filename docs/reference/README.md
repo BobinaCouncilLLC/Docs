@@ -1,9 +1,10 @@
 # Reference
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/309"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/309.png?v=1786004681480" alt="Cheeky Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/308"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/308.png" alt="Tipping Bobina" width="120" /></a>
-  <a href="https://bobina.moe/bobinas/307"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/307.png" alt="Ramen Break Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/309"><img src="../../assets/bobinas/309-cheeky-bobina.webp" alt="Cheeky Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/308"><img src="../../assets/bobinas/308-tipping-bobina.webp" alt="Tipping Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/307"><img src="../../assets/bobinas/307-ramen-break-bobina.webp" alt="Ramen Break Bobina" width="120" /></a>
+  <a href="https://bobina.moe/bobinas/278"><img src="../../assets/bobinas/278-bobina-drones.webp" alt="Bobina Drones" width="120" /></a>
 </p>
 
 Part of the [Bobina Council Docs](../../README.md).

@@ -1,8 +1,8 @@
 # Merchandise
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/303"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/303.png" alt="Cyber Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/302"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/302.png" alt="AM Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/303"><img src="../../assets/bobinas/303-cyber-bobina.webp" alt="Cyber Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/302"><img src="../../assets/bobinas/302-am-bobina.webp" alt="AM Bobina" width="130" /></a>
 </p>
 
 Official Bobina merchandise with holder benefits and Web3 checkout.
@@ -47,7 +47,7 @@ Every purchase supports the Bobina Council ecosystem while you get awesome gear!
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/302"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/302.png" alt="AM Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/302"><img src="../../assets/bobinas/302-am-bobina.webp" alt="AM Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>

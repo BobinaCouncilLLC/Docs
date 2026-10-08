@@ -1,8 +1,9 @@
 # Core Features
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/291"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/291.png" alt="Reindeer Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/290"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/290.png" alt="Soul Reaper Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/291"><img src="../../assets/bobinas/291-reindeer-bobina.webp" alt="Reindeer Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/290"><img src="../../assets/bobinas/290-soul-reaper-bobina.webp" alt="Soul Reaper Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/275"><img src="../../assets/bobinas/275-backrooms-bobina.webp" alt="Backrooms Bobina" width="130" /></a>
 </p>
 
 The foundational pillars of the Bobina experience.
@@ -31,7 +32,7 @@ Sign in with X, Google, TikTok, Discord, Telegram, or wallet to access all featu
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/290"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/290.png" alt="Soul Reaper Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/290"><img src="../../assets/bobinas/290-soul-reaper-bobina.webp" alt="Soul Reaper Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>

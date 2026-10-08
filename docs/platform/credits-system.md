@@ -1,8 +1,9 @@
 # Credits System
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/289"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/289.png" alt="Skydive Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/288"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/288.png" alt="Syrup Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/289"><img src="../../assets/bobinas/289-skydive-bobina.webp" alt="Skydive Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/288"><img src="../../assets/bobinas/288-syrup-bobina.webp" alt="Syrup Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/274"><img src="../../assets/bobinas/274-simulation-bobina.webp" alt="Simulation Bobina" width="130" /></a>
 </p>
 
 Power your interactions with Bobina using the credits economy.
@@ -72,7 +73,7 @@ Tiers are evaluated from highest requirement downward. Values above are live API
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/288"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/288.png" alt="Syrup Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/288"><img src="../../assets/bobinas/288-syrup-bobina.webp" alt="Syrup Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>

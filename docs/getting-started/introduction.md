@@ -1,8 +1,9 @@
 # Introduction
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/293"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/293.png" alt="Chud Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/292"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/292.png" alt="Monke Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/293"><img src="../../assets/bobinas/293-chud-bobina.webp" alt="Chud Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/292"><img src="../../assets/bobinas/292-monke-bobina.webp" alt="Monke Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/277"><img src="../../assets/bobinas/277-blockchain-bobina.webp" alt="Blockchain Bobina" width="130" /></a>
 </p>
 
 Welcome to the Bobina Council. Here's what you need to know.
@@ -43,7 +44,7 @@ The first time you visit, bobina.moe asks you to accept the Terms of Service and
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/292"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/292.png" alt="Monke Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/292"><img src="../../assets/bobinas/292-monke-bobina.webp" alt="Monke Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>

@@ -1,8 +1,8 @@
 # Token Purchase
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/297"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/297.png" alt="Green Lantern Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/296"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/296.png" alt="Bury Pink &amp; Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/297"><img src="../../assets/bobinas/297-green-lantern-bobina.webp" alt="Green Lantern Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/296"><img src="../../assets/bobinas/296-bury-pink-and-bobina.webp" alt="Bury Pink &amp; Bobina" width="130" /></a>
 </p>
 
 Buy $BOBINA tokens easily with our integrated Coinbase Onramp.
@@ -31,7 +31,7 @@ We've integrated Coinbase's onramp solution to make purchasing $BOBINA tokens as
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/296"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/296.png" alt="Bury Pink &amp; Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/296"><img src="../../assets/bobinas/296-bury-pink-and-bobina.webp" alt="Bury Pink &amp; Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>

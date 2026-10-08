@@ -1,8 +1,9 @@
 # How to Contribute
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/307"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/307.png" alt="Ramen Break Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/306"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/306.png" alt="Bobina: Tomb Raider" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/307"><img src="../../assets/bobinas/307-ramen-break-bobina.webp" alt="Ramen Break Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/306"><img src="../../assets/bobinas/306-bobina-tomb-raider.webp" alt="Bobina: Tomb Raider" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/269"><img src="../../assets/bobinas/269-buff-bobina.webp" alt="Buff Bobina" width="130" /></a>
 </p>
 
 Submit your own Bobina art or propose platform changes via the official [Contribute Page](https://bobina.moe/contribute).
@@ -53,7 +54,7 @@ For inspiration and our official AI prompt tutorial, please visit the [Branding 
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/306"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/306.png" alt="Bobina: Tomb Raider" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/306"><img src="../../assets/bobinas/306-bobina-tomb-raider.webp" alt="Bobina: Tomb Raider" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>

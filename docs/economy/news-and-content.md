@@ -1,8 +1,8 @@
 # News & Content
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/301"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/301.jpg" alt="Prison Bobina" width="130" /></a>
-  <a href="https://bobina.moe/bobinas/300"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/300.png" alt="Guitar Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/301"><img src="../../assets/bobinas/301-prison-bobina.webp" alt="Prison Bobina" width="130" /></a>
+  <a href="https://bobina.moe/bobinas/300"><img src="../../assets/bobinas/300-guitar-bobina.webp" alt="Guitar Bobina" width="130" /></a>
 </p>
 
 Stay informed with articles, updates, and live content from the Bobina Council.
@@ -40,7 +40,7 @@ All content types support community engagement through voting, comments, and sha
 ---
 
 <p align="center">
-  <a href="https://bobina.moe/bobinas/300"><img src="https://6wf3xhuhwdy0ogdt.public.blob.vercel-storage.com/bobinas/300.png" alt="Guitar Bobina" width="100" /></a>
+  <a href="https://bobina.moe/bobinas/300"><img src="../../assets/bobinas/300-guitar-bobina.webp" alt="Guitar Bobina" width="100" /></a>
 </p>
 
 <p align="center"><sub>Art from the <a href="https://bobina.moe/bobinas">Bobina gallery</a> · Back to the <a href="../../README.md">Docs index</a></sub></p>
