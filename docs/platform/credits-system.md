@@ -8,7 +8,7 @@
 
 Power your interactions with Bobina using the credits economy.
 
-> **Live values** from [`/api/credits/public-config`](https://bobina.moe/api/credits/public-config) (verified 2026-09-12). The docs page on bobina.moe loads this same endpoint.
+> **Live values** from [`/api/credits/public-config`](https://bobina.moe/api/credits/public-config) (verified 2026-10-08). The docs page on bobina.moe loads this same endpoint.
 
 ## What Are Credits?
 
@@ -53,7 +53,11 @@ Buy credits to keep chatting with Bobina. Credits are priced at **$0.20 per cred
 * Credits expire **1 year after purchase**
 * Credit purchases are announced in Telegram and Discord. Those announcements say: "Bobina Council LLC may use all proceeds at its sole discretion, with no commitment to buy back tokens."
 
-`dailyFreeLimit` is currently **0**. Bobina generation includes **1** free reroll(s).
+Non-holders get `config.dailyFreeLimit` free messages per day, currently **0** (live). There is no code default: if the free-message setting is missing or invalid, credits fail closed with `billing_unresolved` instead of falling back to a number. When you run out, Bobina says "You've hit your daily limit, honey. Grab credits to keep going, or come back tomorrow!" with buttons to buy credits (in Telegram and Discord the plain-text reply says "Grab credits at bobina.moe/credits to keep going" instead), and the credits page shows your real free-messages-left count. Bobina generation includes **1** free reroll(s).
+
+## Running Out
+
+Nobody has unlimited credits, and admins have no unlimited bypass. Every turn uses your daily free messages first, then your paid credits. Once free messages are used up and your balance is 0, the turn is refused with `out_of_credits`. If your credits can't be read at all, Bobina says "I can't reach the credits ledger right now…" and you aren't charged.
 
 Access the Credits panel from **Terminal → Settings** ([bobina.moe/?terminal=settings](https://bobina.moe/?terminal=settings)) or the **Companion** tab ([bobina.moe/?terminal=companion](https://bobina.moe/?terminal=companion)).
 

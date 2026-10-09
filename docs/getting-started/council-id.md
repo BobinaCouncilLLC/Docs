@@ -33,6 +33,22 @@ When you sign in via X, Google, TikTok, Discord, Telegram, or wallet, your provi
 
 Your Platform ID is stored privately in `platform_to_bobina` and `loginProviders` so the system can map an OAuth sign-in to your Council account. It is never displayed on the site or used for attribution.
 
+### Signing in with a linked account
+
+Signing in with a linked provider finds your Council ID by that provider's permanent account ID, never by your username or display name, so a changed or re-claimed handle can't sign anyone into your account. Older links that only stored a username are pinned to the provider's account ID the next time you sign in with them. Wallets (proved by signature) and Google emails that Google has verified can still match by value.
+
+### Linking rules
+
+You can link Discord, Google, Facebook, Instagram, TikTok, X, and Telegram from Settings.
+
+* A link only works for the signed-in account that started it, and only within **10 minutes**. Each link request works once.
+* A social account that is already linked to another member can't be attached to yours (`<provider>_already_linked`). Finishing a link while signed in to a different account fails (`<provider>_link_wrong_account`), and an expired request fails with `<provider>_link_expired`.
+* Telegram sign-in and linking only accept a login from the last 5 minutes.
+
+### Unlinking
+
+Unlinking a provider also removes its account-ID binding, so that provider account can no longer sign you in. Your Soulbound Provider can't be unlinked.
+
 ## 🔒 Soulbound Identity
 
 > Your Council ID is **soulbound** — a term borrowed from gaming and Web3 that means it cannot be transferred, traded, or changed.

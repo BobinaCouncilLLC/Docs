@@ -38,6 +38,10 @@ Routing:
 * [bobina.moe/leaderboard?terminal=…](https://bobina.moe/leaderboard?terminal=overview) still opens whichever tab you name.
 * A `/leaderboard` link with `?token=` or `?symbol=` still opens the Tokens tab (a specific token).
 * `?terminal=leaderboard` lands on the Leaderboard tab.
+* `/leaderboard/` with a trailing slash, in any capitalization (like `/LEADERBOARD/`), goes straight to the Leaderboard tab in one redirect.
+* Old links to `/?terminal=community` keep working.
+
+Any bobina.moe address that ends in a slash, like `bobina.moe/docs/`, redirects once to the same address without the slash.
 
 ### Roles & Unlocks
 

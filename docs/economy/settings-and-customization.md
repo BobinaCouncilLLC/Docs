@@ -29,6 +29,10 @@ Customize your public council profile that other members see across the platform
 - **Custom Banner:** Add a banner image to your profile page with repositioning support
 - **Social Links:** Link your X, TikTok, and Instagram profiles for others to discover
 
+### Danger
+
+- **Sign Out Everywhere:** Signs your account out on every device and browser, including this one. Sessions that started before you press it stop working on their next request. If it can't be done right now, you'll see an error and nothing is changed.
+
 ## Relationship Dynamics (live options)
 
 Loaded from [`/api/relationship-settings/options`](https://bobina.moe/api/relationship-settings/options) (verified 2026-09-12):
