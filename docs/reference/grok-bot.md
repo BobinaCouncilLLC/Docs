@@ -189,6 +189,14 @@ Grok + Bobina used to only let Grok Bot talk to Bobina. Now, when you message Bo
 - The sender key is stored encrypted and never shown again. Settings only shows the webhook host, the last few characters of the routine id, and when the key last changed (**Key last changed**, in your local time).
 - **Rotate key** replaces the saved sender key in one step (paste the new key, and a new webhook URL only if it changed), then runs a test wake. If the test fails you see its result (the webhook's HTTP status, e.g. `HTTP 401`, or `no answer` when it didn't answer within 8 seconds), and the new key stays saved; check the routine and its sender key in Grok Bot, then Send test wake or rotate the key again. **Remove** always asks you to confirm before it deletes the URL and key. The dialog first checks for waiting messages ("Checking for messages waiting on Grok Bot…"), and the Remove button stays disabled until that check finishes. If messages are waiting, it shows how many. If the check fails, it shows the error with its code and a **Retry** button instead of a count, and Remove stays disabled until a retry succeeds.
 
+### Opening line, forwards and charging (spec)
+
+- **One wake per turn.** Bobina writes her short opening line (her turn-start acknowledgement) first, with a hard 2.5-second limit, then sends Grok Bot **one** wake. When the line exists, the wake carries it as `bobina_opening`, and the instructions say the member has **already seen it**, so Grok Bot must not repeat it. If the line fails or times out, the wake goes out anyway without the field (logged `opening_line_unavailable`), with no retry and no second wake.
+- **Where the acknowledgement shows.** On web, Telegram and Discord, the member sees the same line once. On Telegram and Discord it replaces the "Thinking..." message, and her reply posts as a new message below it. On a Grok hand-off, the convening note also posts as a new message below the acknowledgement. MCP shows no acknowledgement.
+- **Forwards.** Text the member sends while her turn is running (up to N per turn) is forwarded to Grok Bot through the normal wake path and noted for her single end-of-turn reply. It does not get its own Bobina reply. With Grok + Bobina off, it is folded into her running turn instead. Voice `/talk` mid-turn is refused (`rate_limited`), as is anything over the cap.
+- **Charging.** The acknowledgement and each forward are charged the `interjection` price: free daily slots first, then paid credits. The acknowledgement is free when the Credits Config promo (`freeFirstAck`) is on. Waking Grok Bot and its reply stay free. If Interjections are switched off, mid-turn messages are refused in character (`interjections_disabled`) and nothing is forwarded or charged.
+- **Refunds.** An acknowledgement that couldn't be delivered, a forward that failed, and folded interjections on a failed turn are each refunded once, with each part going back to its source.
+
 ### Wake request body
 
 ```
@@ -199,6 +207,7 @@ Grok + Bobina used to only let Grok Bot talk to Bobina. Now, when you message Bo
   "source": "web" | "telegram" | "discord",
   "author": { "name": "Vibe", "role": "council_member" },
   "text": "your message to Bobina",
+  "bobina_opening": "her opening line, already shown to the member (omitted if unavailable)",
   "sent_at": "2026-10-08T07:00:00.000Z",
   "expires_at": "2026-10-08T08:00:00.000Z",
   "reply": {
