@@ -121,5 +121,18 @@ Sampled from the [gallery](https://bobina.moe/bobinas):
 
 Synced from [bobina.moe/docs](https://bobina.moe/docs) 10/08/2026. Artwork is the most recent Bobinas from [bobina.moe/bobinas](https://bobina.moe/bobinas) as of that date.
 
-Copyright (c) 2026 Bobina Council LLC  
-All rights reserved.
+---
+
+## About Bobina Council
+
+Vibekilla built the Council so members could contribute ideas to his original character, Bobina. It's open source for transparency, and so anyone can bring their own original characters into AI and tokenization. It's built to be modular, with reusable primitives and components.
+
+## License
+
+The code is licensed under Apache-2.0. If you use or fork it, keep the copyright notice and NOTICE file and give attribution. The Bobina character, artwork, lore, names and logos are (c) Bobina Council LLC, all rights reserved, and are not covered by the code license. Bobo the Bear was created by Rekt_Tekashi. See [LICENSE](LICENSE), [NOTICE](NOTICE) and [TRADEMARKS.md](TRADEMARKS.md).
+
+## Support the Bobina World Order
+
+Holding $BOBINA helps fund development and future updates. You can also send support to the treasury at [treasury.bobina.eth](https://app.ens.domains/treasury.bobina.eth) or [bobina.sol](https://www.sns.id/domain/bobina). Support is voluntary and not tax-deductible. Nothing here is financial advice, and $BOBINA is not an investment.
+
+(c) 2026 Bobina Council LLC. Bobo & Bobina World Order. 🐻💖
