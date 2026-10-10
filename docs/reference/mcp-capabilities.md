@@ -26,10 +26,13 @@ Billable MCP tools spend the same credits as the rest of the platform. Your [cre
 
 ## Interjections over MCP (spec)
 
-- **No acknowledgement.** `bobina.talk` never shows or charges a turn-start acknowledgement. You get her one reply.
-- **Mid-turn messages.** One turn runs per member at a time. A `bobina.talk` **text** call sent while her turn is running is an interjection: it is charged the `interjection` price (free daily slots first), up to N per turn (`maxInterjectionsPerTurn`), and folded into the running turn, or forwarded to your Grok Bot when Grok + Bobina is on. It does not start a separate Bobina reply. A **voice** call (`voice: true`) mid-turn is refused with `rate_limited` (429) and is not charged.
-- **Refusals.** These are coded and never charged. Over the cap: `rate_limited`. Interjections switched off in the Credits Config: `interjections_disabled` (409), in her voice. Price or config unreadable: `billing_unresolved` (503). Text over 2,000 characters: `invalid_request` (400).
-- **Credits.** If the forward or her turn fails after a charge, the charge is refunded once, each part (free slot or paid credits) back to where it came from. The `bobina.talk` tool description includes the same Interjections line as the credits pages.
+Over MCP there is no acknowledgement. A text message sent while her reply is still running is an interjection: charged as above, forwarded to your Grok Bot (or folded into her reply when Grok + Bobina is off), with no separate reply. A voice request sent mid-turn is refused (rate_limited) and not charged.
+
+- **One turn at a time.** `bobina.talk` from your own MCP client holds your single Bobina turn, just like web, Telegram and Discord. (Calls Grok Bot makes as part of a handed-off turn are not interjections.)
+- **Text mid-turn.** Handled by the same interjection rules as every other surface: up to N per turn (`maxInterjectionsPerTurn`), charged the `interjection` price instead of the talk price (free daily slots first, then paid credits), and stored in that turn's memory. The tool result is `{ ok: true, interjection: true, forwarded | folded: true, reply }`.
+- **Voice mid-turn** (`voice: true`): refused with `rate_limited`, not charged.
+- **Refusals** (coded, never charged): over the cap `rate_limited`; interjections switched off (or a cap of 0) `interjections_disabled` (409), in her voice; config or Grok mode unreadable `billing_unresolved` (503); text over 2,000 characters `invalid_request` (400); the same request key again `duplicate_request`.
+- **Refunds.** A failed forward is refunded once. If her turn fails, every interjection folded into it is refunded once. Each part goes back to where it came from (free slot or paid credits).
 
 ## Privacy & access
 

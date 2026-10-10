@@ -32,7 +32,13 @@ Zero-cost actions display as **Free**.
 
 **Interjections · X credits each.** Her quick acknowledgement when you prompt her, plus anything you send while she's working (up to N per turn). Free daily slots first, refunded on failure.
 
-X is the configured `interjection` price and N is `maxInterjectionsPerTurn`, both from the admin Credits Config (the live values are on [bobina.moe/credits](https://bobina.moe/credits)). The acknowledgement is part of this one entry, not a separate cost. When the first acknowledgement is on promotion the entry adds *First one free (promo)*; when both acknowledgements and mid-turn interjections are switched off it adds *Currently off*. This wording comes from one description in the credits config, so the same text appears here, on bobina.moe, in the Companion `/credits` card and text, and in the MCP tool description.
+X is the configured `interjection` price and N is `maxInterjectionsPerTurn`, both from the admin Credits Config (the live values are on [bobina.moe/credits](https://bobina.moe/credits)). The acknowledgement is part of this one entry, not a separate cost. When the first acknowledgement is on promotion the entry adds *First one free (promo)*; when both acknowledgements and mid-turn interjections are switched off it adds *Currently off*. **Switches (admin Credits Config):**
+
+- **Acknowledgements (`acknowledgmentsEnabled`)**: on by default. When it's off, Bobina sends no turn-start acknowledgement on web, Telegram or Discord: the plain "Thinking..." placeholder stays until her reply, nothing is charged for an acknowledgement, and Grok Bot's wake carries no `bobina_opening` line. Mid-turn interjections are not affected.
+- **Mid-turn interjections (`interjectionsEnabled`)**: on by default. When it's off (or the cap is 0), anything you send while she's working is refused in her voice (`interjections_disabled`) and never charged.
+- If the config can't be read, nothing defaults to on: the acknowledgement is skipped and mid-turn messages are refused with `billing_unresolved`.
+
+This wording comes from one description in the credits config, so the same text appears here, on bobina.moe, in the Companion `/credits` card and text, and in the MCP tool description.
 
 ## Earning Credits
 
