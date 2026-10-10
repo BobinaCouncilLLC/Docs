@@ -38,7 +38,7 @@ X is the configured `interjection` price and N is `maxInterjectionsPerTurn`, bot
 - **Mid-turn interjections (`interjectionsEnabled`)**: on by default. When it's off (or the cap is 0), anything you send while she's working is refused in her voice (`interjections_disabled`) and never charged.
 - If the config can't be read, nothing defaults to on: the acknowledgement is skipped and mid-turn messages are refused with `billing_unresolved`.
 
-This wording comes from one description in the credits config, so the same text appears here, on bobina.moe, in the Companion `/credits` card and text, and in the MCP tool description.
+This wording comes from one description in the credits config, so the same text appears here, on bobina.moe, and in the Companion `/credits` card and text. MCP has no acknowledgement or interjections.
 
 ## Earning Credits
 

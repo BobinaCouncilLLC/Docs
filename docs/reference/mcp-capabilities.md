@@ -22,17 +22,9 @@ The **Model Context Protocol (MCP)** is an open standard for connecting AI assis
 
 Billable MCP tools spend the same credits as the rest of the platform. Your [credit balance](#credits) is shared across web chat, Discord, Telegram, and MCP — a call made through any surface draws from one balance. Earned (free/daily) credits are spent before purchased credits, and balances update live: every read reflects the latest deduction, with no caching delay between spending on one surface and seeing the new total on another.
 
+MCP has no turn-start acknowledgement and no interjection handling: each `bobina.talk` call is its own turn, charged at the talk price.
+
 > **Info:** Current per-tool prices are always shown in the [Credits System](#credits) section and the in-app Credits panel. Because pricing is registry-driven, new tools appear there automatically once published.
-
-## Interjections over MCP (spec)
-
-Over MCP there is no acknowledgement. A text message sent while her reply is still running is an interjection: charged as above, forwarded to your Grok Bot (or folded into her reply when Grok + Bobina is off), with no separate reply. A voice request sent mid-turn is refused (rate_limited) and not charged.
-
-- **One turn at a time.** `bobina.talk` from your own MCP client holds your single Bobina turn, just like web, Telegram and Discord. (Calls Grok Bot makes as part of a handed-off turn are not interjections.)
-- **Text mid-turn.** Handled by the same interjection rules as every other surface: up to N per turn (`maxInterjectionsPerTurn`), charged the `interjection` price instead of the talk price (free daily slots first, then paid credits), and stored in that turn's memory. The tool result is `{ ok: true, interjection: true, forwarded | folded: true, reply }`.
-- **Voice mid-turn** (`voice: true`): refused with `rate_limited`, not charged.
-- **Refusals** (coded, never charged): over the cap `rate_limited`; interjections switched off (or a cap of 0) `interjections_disabled` (409), in her voice; config or Grok mode unreadable `billing_unresolved` (503); text over 2,000 characters `invalid_request` (400); the same request key again `duplicate_request`.
-- **Refunds.** A failed forward is refunded once. If her turn fails, every interjection folded into it is refunded once. Each part goes back to where it came from (free slot or paid credits).
 
 ## Privacy & access
 
