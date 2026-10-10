@@ -13,4 +13,5 @@ Part of the [Bobina Council Docs](../../README.md).
 - [Login with Bobina.moe](./login-with-bobina.md)
 - [MCP Capabilities](./mcp-capabilities.md)
 - [Bobina for Grok Bot (WIP)](./grok-bot.md)
+- [Environment Variable Setup](./env-setup.md)
 
