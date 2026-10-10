@@ -115,10 +115,12 @@ S3_REGION=us-east-1
 S3_ACCESS_KEY_ID=localaccess
 S3_SECRET_ACCESS_KEY=localsecret-change-me
 S3_FORCE_PATH_STYLE=true
-S3_PUBLIC_BASE_URL=http://127.0.0.1:9000/bobina
+# Leave S3_PUBLIC_BASE_URL unset locally: Moe derives it as S3_ENDPOINT + "/" + S3_BUCKET
+# (path-style → http://127.0.0.1:9000/bobina/<key>). Set it only when a CDN or
+# different public hostname should be persisted instead of the endpoint URL.
 ```
 
-Companion still uses `@vercel/blob` directly (for example `GROK_MEDIA_BLOB_READ_WRITE_TOKEN`). Moving it onto the same adapter is **(planned)**. Until then, features that upload from Companion need a Vercel Blob token or are unavailable locally.
+Companion also speaks S3 when `STORAGE_DRIVER=s3`: it uses the shared `S3_*` credentials plus **`GROK_MEDIA_S3_BUCKET`** for private Grok turn media (presigned reads; it does **not** read `S3_PUBLIC_BASE_URL` or `S3_BUCKET`). Default remains Vercel Blob via `GROK_MEDIA_BLOB_READ_WRITE_TOKEN`.
 
 ## 6. Environment variables
 

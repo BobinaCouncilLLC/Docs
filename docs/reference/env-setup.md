@@ -122,7 +122,12 @@ Use the same commands, and a **separate** pair, for `OAUTH_JWT_PRIVATE_KEY` / `O
 | `BLOB_READ_WRITE_TOKEN` | Moe + Comp | R | P | Yes | Public asset/voice Blob store (read implicitly by `@vercel/blob`) | Vercel → **Storage → Blob → Connect to project** adds it automatically ([docs](https://vercel.com/docs/vercel-blob)) |
 | `BLOB_STORE_ACCESS` | Moe | O | P | No | Set `private` only if the store was created as private | `private` |
 | `GROK_MEDIA_BLOB_READ_WRITE_TOKEN` | Comp | R for Grok Bot media | P | Yes | A **separate private** Blob store for short-lived Grok Bot turn media | Create a second Blob store (private) and copy its read-write token into this name |
-| `STORAGE_DRIVER` + `S3_ENDPOINT`, `S3_REGION`, `S3_BUCKET`, `S3_ACCESS_KEY_ID`, `S3_SECRET_ACCESS_KEY`, `S3_PUBLIC_BASE_URL`, `S3_FORCE_PATH_STYLE`, `GROK_MEDIA_S3_BUCKET` | Moe + Comp | O | — | Keys: Yes | Self-host/VPS only: `STORAGE_DRIVER=s3` swaps Blob for any S3-compatible bucket | your S3 provider |
+| `STORAGE_DRIVER` | Moe + Comp | O | — | No | `s3` selects the S3-compatible driver; unset / `vercel` / `vercel-blob` keeps Vercel Blob | `s3` |
+| `S3_ENDPOINT`, `S3_REGION`, `S3_FORCE_PATH_STYLE` | Moe + Comp | O (R when `STORAGE_DRIVER=s3`) | — | No | Shared S3 API endpoint/region/addressing. `S3_FORCE_PATH_STYLE` defaults to `true` (RustFS/MinIO). Production endpoint must be **https** | your S3 provider |
+| `S3_ACCESS_KEY_ID`, `S3_SECRET_ACCESS_KEY` | Moe + Comp | O (R when `STORAGE_DRIVER=s3`) | — | Yes | Shared S3 credentials | your S3 provider |
+| `S3_BUCKET` | Moe | O (R when Moe uses `s3`) | — | No | Moe's public-asset bucket (avatars, articles, backups path). Path-style object URLs are `S3_ENDPOINT/S3_BUCKET/<key>` when `S3_PUBLIC_BASE_URL` is unset | create the bucket |
+| `S3_PUBLIC_BASE_URL` | **Moe only** | O | — | No | Public base Moe persists for object URLs. **Not read by Companion** (Grok media is private + presigned). If unset, derived from `S3_ENDPOINT` + `S3_BUCKET`. Point at a CDN in production if you have one | CDN origin or leave unset |
+| `GROK_MEDIA_S3_BUCKET` | Comp | O (R when Comp uses `s3` for Grok media) | — | No | Companion's **private** Grok turn-media bucket (not `S3_BUCKET`) | create a private bucket |
 
 ### Discord
 
