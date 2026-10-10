@@ -157,8 +157,7 @@ Use the same commands, and a **separate** pair, for `OAUTH_JWT_PRIVATE_KEY` / `O
 |---|---|---|---|---|---|---|
 | `TWITTER_API_KEY` / `TWITTER_API_SECRET` | Moe + Comp | O | P | Yes | OAuth 1.0a consumer key/secret (posting as the Bobina account) | X portal → app → **Keys and tokens → Consumer Keys** |
 | `TWITTER_ACCESS_TOKEN` | Moe + Comp | O | P | Yes | OAuth 1.0a user access token | **Keys and tokens → Access Token and Secret** (set app permissions to Read and Write **first**) |
-| `TWITTER_ACCESS_TOKEN_SECRET` | Moe | O | P | Yes | Access token secret (Moe's name) | same |
-| `TWITTER_ACCESS_SECRET` | Comp | O | P | Yes | Access token secret (**Companion's name differs from Moe's**) | same value as above |
+| `TWITTER_ACCESS_TOKEN_SECRET` | Moe + Comp | O | P | Yes | OAuth 1.0a access token secret (same name in both apps since Companion #579) | same |
 | `TWITTER_BEARER_TOKEN` | Comp | O | P | Yes | App-only bearer for read lookups | **Keys and tokens → Bearer Token** |
 | `X_LOOKUPS_PER_MINUTE`, `X_ONLY` | Comp | O | P | No | Lookup rate cap / X-only mode | number / flag |
 
@@ -183,7 +182,7 @@ Use the same commands, and a **separate** pair, for `OAUTH_JWT_PRIVATE_KEY` / `O
 | Name | App | Req | Env | Sens | What it does | How to get it |
 |---|---|---|---|---|---|---|
 | `IP_HASH_KEY` | Moe | **R** | P | Yes | HMAC key for every stored IP hash, IP bans included. 32+ chars or sign-in IP checks throw. | `openssl rand -base64 48`. **Do not rotate** |
-| `BOBINA_HASH_SECRET` | Moe + Comp (separate values are fine) | R | P | Yes | Moe: terms-acceptance IP hashes, proposal/submission hashes, `/api/companion/lookup` auth. Comp: terms IP hashes and `/terms` prompt rate-limit markers. | `openssl rand -base64 48` |
+| `BOBINA_HASH_SECRET` | Moe + Comp (**must be the same value in both**) | R | P | Yes | Moe: terms-acceptance IP hashes, proposal/submission hashes, `/api/companion/lookup` auth (a mismatch between the apps returns 401). Comp: terms IP hashes, `/terms` prompt rate-limit markers and anonymous token scans. If unset, Moe record hashing refuses with 503 `temporarily_unavailable` and Companion anonymous token scans refuse with 503 `service_unavailable`. | `openssl rand -base64 48` |
 | `CRON_SECRET` | Moe + Comp | **R** | P | Yes | Vercel sends `Authorization: Bearer $CRON_SECRET` to cron routes; routes reject anything else | `openssl rand -base64 48` ([docs](https://vercel.com/docs/cron-jobs/manage-cron-jobs#securing-cron-jobs)) |
 | `COMPANION_SECRET` | Comp | O | P | Yes | Legacy admin-token auth and the token-scan IP hash | `openssl rand -base64 48` |
 | `GROK_WEBHOOK_ENCRYPTION_KEY` | Comp | O | P | Yes | Encrypts members' saved Grok Bot webhook URLs. If unset, derived from `COMPANION_API_SECRET`. | `openssl rand -base64 32` |
@@ -241,7 +240,7 @@ Telegram then sends `X-Telegram-Bot-Api-Secret-Token` on every update ([setWebho
 ### X Developer Portal
 [developer.x.com/en/portal/dashboard](https://developer.x.com/en/portal/dashboard) → Project → App.
 1. **User authentication settings:** App permissions **Read and write**, type **Web App**, callback `https://bobina.moe/api/auth/callback/twitter`.
-2. **Keys and tokens:** API Key and Secret → `TWITTER_API_KEY` / `TWITTER_API_SECRET`. Bearer Token → `TWITTER_BEARER_TOKEN`. Access Token and Secret (generate **after** step 1, or they stay read-only) → `TWITTER_ACCESS_TOKEN` and `TWITTER_ACCESS_TOKEN_SECRET` (Moe) / `TWITTER_ACCESS_SECRET` (Comp). OAuth 2.0 Client ID and Secret → `TWITTER_CLIENT_ID` / `TWITTER_CLIENT_SECRET` (Moe sign-in).
+2. **Keys and tokens:** API Key and Secret → `TWITTER_API_KEY` / `TWITTER_API_SECRET`. Bearer Token → `TWITTER_BEARER_TOKEN`. Access Token and Secret (generate **after** step 1, or they stay read-only) → `TWITTER_ACCESS_TOKEN` and `TWITTER_ACCESS_TOKEN_SECRET` (both apps). OAuth 2.0 Client ID and Secret → `TWITTER_CLIENT_ID` / `TWITTER_CLIENT_SECRET` (Moe sign-in).
 
 ### Upstash
 [console.upstash.com](https://console.upstash.com/) → Redis → your database → **REST API** section. Copy `UPSTASH_REDIS_REST_URL` and the **read-write** `UPSTASH_REDIS_REST_TOKEN` into `KV_REST_API_URL` / `KV_REST_API_TOKEN`. The **read-only** token can't write and will break credits, rate limits and sessions, so don't use it for these. If the database was added through the Vercel Marketplace, Vercel injects prefixed copies (e.g. `UPSTASH_FOR_REDIS_*`). The code doesn't read those names, so map them to `KV_*`.
@@ -265,8 +264,7 @@ Vercel → **Storage → Create → Blob** → **Connect Project** adds `BLOB_RE
 | Variable | Effect of rotating | Safe procedure |
 |---|---|---|
 | `IP_HASH_KEY` | **Breaks every IP ban** and all IP matching: stored hashes can no longer be matched. | **Don't rotate.** If it leaks, rotate and accept that IP bans must be re-applied. |
-| `BOBINA_HASH_SECRET` (Comp) | `/terms` prompt rate-limit markers reset (they expire within minutes anyway). Old terms IP hashes stop matching anything, but acceptances stay valid because they're keyed by account. | Replace and redeploy. |
-| `BOBINA_HASH_SECRET` (Moe) | Same terms effect. Proposal/submission hashes made before can't be re-derived. Whatever calls `/api/companion/lookup` must get the new value at the same time. | Replace and redeploy together with the caller. |
+| `BOBINA_HASH_SECRET` (Moe + Comp) | `/terms` prompt rate-limit markers reset (they expire within minutes anyway). Old terms IP hashes stop matching anything, but acceptances stay valid because they're keyed by account. Proposal/submission hashes made before can't be re-derived. Until both apps have the new value, `/api/companion/lookup` returns 401. | Rotate both apps together: set the same new value on Moe and Companion, then redeploy both. |
 | `MERCH_PII_ENCRYPTION_KEY` | Every stored shipping address becomes **unreadable**. | Re-encrypt first (decrypt with the old key, encrypt with the new key, e.g. adapting `scripts/merch-encrypt-legacy-addresses.ts`), then swap. |
 | `COMPANION_USER_TOKEN_PRIVATE_KEY` / `_PUBLIC_KEY` | Every outstanding member token is rejected. Members get logged out of Companion tokens and must re-auth. | Generate a new pair, set **both** apps, deploy both together. |
 | `OAUTH_JWT_PRIVATE_KEY` / `_PUBLIC_KEY` | ID tokens issued to third-party apps stop verifying until they refetch keys. | Rotate in a quiet window. |
@@ -282,6 +280,6 @@ Vercel → **Storage → Create → Blob** → **Connect Project** adds `BLOB_RE
 
 ## 6. Known gaps (from the last audit)
 
-- `TWITTER_ACCESS_SECRET` (Companion code) vs `TWITTER_ACCESS_TOKEN_SECRET` (set in Companion's Vercel): the names differ, so Companion's X posting reports "not configured". Add `TWITTER_ACCESS_SECRET` to Companion.
-- `BOBINA_HASH_SECRET` falls back to the literal `"default_secret"` for proposal/submission hashes on Moe if unset. Always set it.
+- Companion read `TWITTER_ACCESS_SECRET` while Vercel had `TWITTER_ACCESS_TOKEN_SECRET`, so X posting reported "not configured". Fixed by Companion #579, which reads `TWITTER_ACCESS_TOKEN_SECRET` like Moe.
+- `BOBINA_HASH_SECRET` has no fallback (Moe #879): if unset, hashing fails closed with 503. Always set it, to the same value on both apps.
 - Set in Vercel but not read by code: Moe `BOBINA_WEBHOOK_SECRET`, `NEXT_PUBLIC_DYNAMIC_ENVIRONMENT_ID`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_ANON_KEY`, `SUPABASE_JWT_SECRET`, `POSTGRES_*` (integration-injected). Comp `BOBINA_VISION_MODEL`, `DISCORD_MEMBERS_WEBHOOK_URL`, `TWITTER_CLIENT_ID`, `TWITTER_CLIENT_SECRET`, `UPSTASH_FOR_REDIS_*`. `COUNCIL_MOD_USERNAMES` goes away with Moe #875.
