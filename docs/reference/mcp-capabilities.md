@@ -24,6 +24,13 @@ Billable MCP tools spend the same credits as the rest of the platform. Your [cre
 
 > **Info:** Current per-tool prices are always shown in the [Credits System](#credits) section and the in-app Credits panel. Because pricing is registry-driven, new tools appear there automatically once published.
 
+## Interjections over MCP (spec)
+
+- **No acknowledgement.** `bobina.talk` never shows or charges a turn-start acknowledgement. You get her one reply.
+- **Mid-turn messages.** One turn runs per member at a time. A `bobina.talk` **text** call sent while her turn is running is an interjection: it is charged the `interjection` price (free daily slots first), up to N per turn (`maxInterjectionsPerTurn`), and folded into the running turn, or forwarded to your Grok Bot when Grok + Bobina is on. It does not start a separate Bobina reply. A **voice** call (`voice: true`) mid-turn is refused with `rate_limited` (429) and is not charged.
+- **Refusals.** These are coded and never charged. Over the cap: `rate_limited`. Interjections switched off in the Credits Config: `interjections_disabled` (409), in her voice. Price or config unreadable: `billing_unresolved` (503). Text over 2,000 characters: `invalid_request` (400).
+- **Credits.** If the forward or her turn fails after a charge, the charge is refunded once, each part (free slot or paid credits) back to where it came from. The `bobina.talk` tool description includes the same Interjections line as the credits pages.
+
 ## Privacy & access
 
 MCP access is authenticated and tied to your Council ID, so tool calls draw from your own credits and respect your relationship and privacy settings. Capability access is granted at the Council's discretion, and the same data-minimization principles as [Login with Bobina.moe](#oauth) apply: tools only ever return what their described purpose requires.

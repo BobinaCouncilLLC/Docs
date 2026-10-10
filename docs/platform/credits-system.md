@@ -23,9 +23,16 @@ Credits are the currency that powers premium features in the Bobina Council ecos
 | `heatmapGeneration` | Heatmap Generation (/heatmap) | 2 credits |
 | `bobina.talk.text` | Talk to Bobina — Text reply | 1 credit |
 | `bobina.talk.voice` | Talk to Bobina — Voice reply | 3 credits |
+| `interjection` | Interjections | X credits each (configured price) |
 | `bobinaGeneration` | Bobina Generation (Contribute) | 3 credits |
 
 Zero-cost actions display as **Free**.
+
+### Interjections
+
+**Interjections · X credits each.** Her quick acknowledgement when you prompt her, plus anything you send while she's working (up to N per turn). Free daily slots first, refunded on failure.
+
+X is the configured `interjection` price and N is `maxInterjectionsPerTurn`, both from the admin Credits Config (the live values are on [bobina.moe/credits](https://bobina.moe/credits)). The acknowledgement is part of this one entry, not a separate cost. When the first acknowledgement is on promotion the entry adds *First one free (promo)*; when both acknowledgements and mid-turn interjections are switched off it adds *Currently off*. This wording comes from one description in the credits config, so the same text appears here, on bobina.moe, in the Companion `/credits` card and text, and in the MCP tool description.
 
 ## Earning Credits
 
