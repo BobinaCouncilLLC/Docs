@@ -97,6 +97,10 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 - [Login with Bobina.moe](./docs/reference/login-with-bobina.md)
 - [MCP Capabilities](./docs/reference/mcp-capabilities.md)
 - [Bobina for Grok Bot (WIP)](./docs/reference/grok-bot.md)
+- [Environment Variable Setup](./docs/reference/env-setup.md)
+- [Local Installation](./docs/reference/local-installation.md)
+- [Self-Hosting on a VPS](./docs/reference/self-hosting.md)
+- [Backup & Restore](./docs/reference/backup-restore.md)
 
 ---
 
