@@ -22,6 +22,8 @@ The **Model Context Protocol (MCP)** is an open standard for connecting AI assis
 
 Billable MCP tools spend the same credits as the rest of the platform. Your [credit balance](#credits) is shared across web chat, Discord, Telegram, and MCP — a call made through any surface draws from one balance. Earned (free/daily) credits are spent before purchased credits, and balances update live: every read reflects the latest deduction, with no caching delay between spending on one surface and seeing the new total on another.
 
+MCP has no turn-start acknowledgement and no interjection handling: each `bobina.talk` call is its own turn, charged at the talk price.
+
 > **Info:** Current per-tool prices are always shown in the [Credits System](#credits) section and the in-app Credits panel. Because pricing is registry-driven, new tools appear there automatically once published.
 
 ## Privacy & access
