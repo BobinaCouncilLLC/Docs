@@ -282,9 +282,9 @@ By default, you start at rock bottom and Bobina hates your guts. Consider this d
 
 Progression is intentionally slow... Just like true love! Can you reach Soulbound status?
 
-Available Dynamics (12)
+Available Dynamics
 
-Override the Relationship Score algorithmic system by selecting a preferred relationship dynamic in [Terminal Settings or the Web chat drawer](https://bobina.moe/?terminal=settings).
+Override the Relationship Score algorithmic system by selecting a preferred relationship dynamic in [Terminal Settings or the Web chat drawer](https://bobina.moe/?terminal=settings). The live list comes from the Companion and is shown on [bobina.moe/about](https://bobina.moe/about); if it can't be loaded, the page shows a notice instead.
 
 **💕 Romantic Partner**
 
