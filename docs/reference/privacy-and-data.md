@@ -32,6 +32,10 @@ Bobina Council uses OAuth exclusively for authentication. We **never collect, st
 
 You can delete individual conversations with Bobina from the [Terminal Companion tab](https://bobina.moe/?terminal=companion). Open the menu, go to History, and tap the trash icon on any conversation. Deleted conversations are permanently removed from our companion servers and cannot be recovered. You may delete any or all of your conversational data at any time.
 
+- **Confirmation step:** deleting asks you to confirm first, for a single conversation or a bulk selection. Nothing is deleted until you confirm.
+- **Only you:** you can only delete your own conversations. Bobina can't delete your data through any of her tools.
+- **If something goes wrong:** if the delete can't start, nothing is deleted and you can try again in a minute. If it fails partway through, you'll be asked to try again to finish.
+
 ## Account Deletion
 
 You can deactivate your account from the [Terminal Settings](https://bobina.moe/?terminal=settings) (Danger tab). Disconnecting removes:
