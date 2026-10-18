@@ -47,6 +47,7 @@ Live site: [bobina.moe](https://bobina.moe) · Official guides: [bobina.moe/docs
 
 - [Core Features](./docs/platform/core-features.md)
 - [Credits System](./docs/platform/credits-system.md)
+- [Interjections & Turns](./docs/platform/interjections-and-turns.md)
 - [Ranking System](./docs/platform/ranking-system.md)
 - [Proof of Bobina](./docs/platform/proof-of-bobina.md)
 

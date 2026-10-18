@@ -11,6 +11,7 @@ Part of the [Bobina Council Docs](../../README.md).
 
 - [Core Features](./core-features.md)
 - [Credits System](./credits-system.md)
+- [Interjections & Turns](./interjections-and-turns.md)
 - [Ranking System](./ranking-system.md)
 - [Proof of Bobina](./proof-of-bobina.md)
 

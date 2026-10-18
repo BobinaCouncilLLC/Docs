@@ -70,7 +70,7 @@ Use the same commands, and a **separate** pair, for `OAUTH_JWT_PRIVATE_KEY` / `O
 | `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` / `RECAPTCHA_SECRET_KEY` | Moe | O | P | Secret: Yes | reCAPTCHA on forms | [reCAPTCHA admin](https://www.google.com/recaptcha/admin) |
 | `OAUTH_JWT_PRIVATE_KEY` / `OAUTH_JWT_PUBLIC_KEY` | Moe | R for Login with Bobina | P | Yes | Signs OAuth/OIDC ID tokens for third-party apps | P-256 pair (§2) |
 | `GROK_OAUTH_REDIRECT_URIS`, `GROK_REDIRECT_URIS` | Moe | O | P | No | Allowed redirect URIs for the Grok Bot OAuth client | comma-separated URLs |
-| `MCP_TOKEN_SECRET` | Moe + Comp | R | P | Yes | HMAC for signed MCP identity tokens; **same value in both apps** | `openssl rand -base64 48` (16+ chars) |
+| `MCP_TOKEN_SECRET` | Moe + Comp | R | P | Yes | HMAC for signed MCP identity tokens; **same value in both apps**. Companion requires it (16+ chars) with no fallback to `COMPANION_API_SECRET`: missing, empty or short → MCP calls and member routes return 503 `mcp_token_unconfigured` (Companion #611) | `openssl rand -base64 48` (16+ chars) |
 | `MCP_REQUIRE_SIGNED_TOKEN`, `MCP_ALLOW_LEGACY_HEADER_AUTH` | Comp | O | P | No | Hardening switches for MCP auth | `true` / `false` |
 
 ### Admin
@@ -282,4 +282,6 @@ Vercel → **Storage → Create → Blob** → **Connect Project** adds `BLOB_RE
 
 - Companion read `TWITTER_ACCESS_SECRET` while Vercel had `TWITTER_ACCESS_TOKEN_SECRET`, so X posting reported "not configured". Fixed by Companion #579, which reads `TWITTER_ACCESS_TOKEN_SECRET` like Moe.
 - `BOBINA_HASH_SECRET` has no fallback (Moe #879): if unset, hashing fails closed with 503. Always set it, to the same value on both apps.
+- `MCP_TOKEN_SECRET` has no fallback to `COMPANION_API_SECRET` (Companion #611): if it is missing on Companion, MCP calls and member routes return 503 `mcp_token_unconfigured` instead of a generic 500 or a 401.
+- `NEXT_PUBLIC_SOLANA_RPC_URL` has no hardcoded fallback (Moe #882): if unset, Solana sends refuse with `temporarily_unavailable` and Solana balances read as unknown.
 - Set in Vercel but not read by code: Moe `BOBINA_WEBHOOK_SECRET`, `NEXT_PUBLIC_DYNAMIC_ENVIRONMENT_ID`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_ANON_KEY`, `SUPABASE_JWT_SECRET`, `POSTGRES_*` (integration-injected). Comp `BOBINA_VISION_MODEL`, `DISCORD_MEMBERS_WEBHOOK_URL`, `TWITTER_CLIENT_ID`, `TWITTER_CLIENT_SECRET`, `UPSTASH_FOR_REDIS_*`. `COUNCIL_MOD_USERNAMES` goes away with Moe #875.
