@@ -18,6 +18,7 @@ Every member who signs in to the Bobina Council is assigned a permanent Council 
 * **Username Freedom:** You can change your @username without losing any history. Your Council ID stays the same.
 * **Cross-Platform Sync:** Your companion account on Discord and Telegram links back to your Council ID, keeping all your interactions, memories, and relationship data unified.
 * **Wallet Verification:** When you verify your wallet, it is stored on your companion account and tied to your Council ID for credits, holder tier benefits, and token-gated features.
+* **Replacing a wallet:** linking a different wallet unlinks the old one from sign-in, so the old wallet can no longer sign in to your account.
 
 ## 🔀 Council ID vs Platform ID
 
