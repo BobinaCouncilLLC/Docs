@@ -25,6 +25,8 @@ We've integrated Coinbase's onramp solution to make purchasing $BOBINA tokens as
 - **Multiple Payment Options:** Credit card, debit card, or bank transfer supported.
 - **Integrated Experience:** Buy tokens without leaving the Bobina Council website.
 
+> **Note:** On the [Bridge page](https://bobina.moe/bridge), the balances shown in the widget's token list load only when you're signed in. That's the only difference: swaps work the same either way.
+
 > **Info:** 💡 **Pro Tip:** You can also buy $BOBINA on decentralized exchanges like Uniswap if you prefer to use your existing wallet and ETH. Visit the [Buy page](https://bobina.moe/buy) for all purchase options.
 
 

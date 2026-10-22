@@ -9,6 +9,10 @@ Interact with Bobina across Web, Discord, and Telegram. Your companion account s
 
 With a linked bobina.moe account, all commands that don't consume credits (voting, token calls) are FREE across all platforms. [Link accounts in Terminal Settings](https://bobina.moe/?terminal=settings).
 
+- **Message length:** a chat message can be up to 4,000 characters. Longer messages are refused (`message_too_long`) and never charged; nothing is cut off for you.
+- **Linking Discord and Telegram:** only through the sign-in link flow in Settings. If that Discord or Telegram account is already linked to another bobina.moe account, the link is refused.
+- **AI helpers:** the Bobina art prompt enhancer and metadata suggestions are limited to 30 uses per hour each, and voice transcription to 60 per hour (`rate_limited`). Members with purchased credits aren't limited to 60 transcriptions per hour.
+
 **Tabs:** Crypto · Chat · Reminders · Profile · Voting · Dynamics · Skills
 
 ## Crypto & Market Commands
