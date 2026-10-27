@@ -1,6 +1,6 @@
 # Trademarks, Brand and Character Assets
 
-BOBINA™ (pending US registration) and Bobina Council™ are trademarks of Bobina Council LLC.
+BOBINA® is a registered trademark of Bobina Council LLC (U.S. Reg. No. 8520243, serial 99644124, registered October 27, 2026, Class 9; [USPTO TSDR](https://tsdr.uspto.gov/statusview/sn99644124)). Bobina Council™ is a trademark of Bobina Council LLC.
 
 ## All rights reserved
 
