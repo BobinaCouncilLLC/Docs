@@ -4,7 +4,7 @@ BOBINA® is a registered trademark of Bobina Council LLC (U.S. Reg. No. 8520243,
 
 ## All rights reserved
 
-The source code, the Bobina character, artwork, lore, names, logos and other brand assets are (c) Bobina Council LLC, all rights reserved (see [LICENSE](LICENSE)). Bobo the Bear was created by Rekt_Tekashi (https://bobothebear.io); Bobina Council LLC claims no rights to Bobo himself. Bobo and Bobo the Bear are registered trademarks of Market Crashers LLC, not Bobina Council LLC.
+The source code, the Bobina character, artwork, lore, names, logos and other brand assets are (c) Bobina Council LLC, all rights reserved (see [LICENSE](LICENSE)). Bobo® / Bobo the Bear® is a registered trademark of Market Crashers LLC. Bobo the Bear was created by Rekt_Tekashi (https://bobothebear.io); Bobina Council LLC claims no rights to Bobo himself.
 
 ## Asking for permission
 
