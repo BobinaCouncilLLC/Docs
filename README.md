@@ -140,7 +140,7 @@ Before we can merge your pull request, you must sign the [Contributor License Ag
 
 ## License
 
-Copyright (c) 2026 Bobina Council LLC. All rights reserved. The source is published for viewing only; no license is granted to use, copy, modify, fork, distribute or create derivative works without prior written permission from Bobina Council LLC. BOBINA® is a registered trademark of Bobina Council LLC (U.S. Reg. No. 8520243). Bobina Council™ is a trademark of Bobina Council LLC. Bobo the Bear was created by Rekt_Tekashi. See [LICENSE](LICENSE), [NOTICE](NOTICE) and [TRADEMARKS.md](TRADEMARKS.md).
+Copyright (c) 2026 Bobina Council LLC. All rights reserved. The source is published for viewing only; no license is granted to use, copy, modify, fork, distribute or create derivative works without prior written permission from Bobina Council LLC. BOBINA® is a registered trademark of Bobina Council LLC (U.S. Reg. No. 8520243). Bobina Council™ is a trademark of Bobina Council LLC. Bobo the Bear was created by Rekt_Tekashi. Bobo and Bobo the Bear are registered trademarks of Market Crashers LLC, not Bobina Council LLC. See [LICENSE](LICENSE), [NOTICE](NOTICE) and [TRADEMARKS.md](TRADEMARKS.md).
 
 ## Support the Bobina World Order
 
