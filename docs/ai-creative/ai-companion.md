@@ -28,7 +28,7 @@ Generate a price chart for any cryptocurrency.
 - CoinGecko (BTC, ETH, major coins): 24h, 7d, 1m, 3m, 1y
 - DexScreener (contracts, small tokens): 1h, 6h, 24h
 
-**Soft Line (DEX charts):** DEX charts draw a Soft Line from prices Bobina records every 5 min, starting at the first call. While history warms up you get a snapshot card; the line appears once enough real points fill the timeframe. The Soft Line is fail-closed: it only uses real recorded prices, never synthetic candles.
+**Soft Line (DEX charts):** DEX charts draw a Soft Line from prices Bobina records every 5 min, starting at the first call. While history warms up you get a snapshot card; the line appears once enough real points fill the timeframe. The Soft Line is fail-closed: it only uses real recorded prices, never synthetic candles. History kept: 5-minute points for 48 hours; hourly points for 30 days.
 
 Examples: `/chart ETH 7d` `cv BOBINA 24h`
 
