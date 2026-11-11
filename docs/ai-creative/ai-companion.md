@@ -197,7 +197,7 @@ Reminders set on any platform deliver on ALL connected platforms when specified.
 
 View your Relationship Score with Bobina and current dynamic.
 
-Shows: Relationship Score (0-100), current dynamic, total memories, feedback stats
+Shows: Relationship Score (1-100), current dynamic, total memories, feedback stats
 
 ![Score command example](../../assets/docs/score.webp)
 
@@ -251,7 +251,7 @@ Bad response
 
 - Click button, explain why, feedback stored
 - Improves responses over time for everyone
-- Improves your Relationship Score
+- Good feedback raises your Relationship Score by 0.25; bad feedback lowers it by 0.25
 - Unlocks feedback achievements
 
 Token Voting
